@@ -6,10 +6,13 @@ export const ButtonContainer = styled.button`
   height: 62px;
   width: 20%;
   padding: 20px;
-  font-size: 24px;
+  margin: -8px;
+  font-size: 26px;
+  align-items: center;
   cursor: pointer;
 
   &:hover {
     opacity: 0.7;
+    color: blue;
   }
 `;
