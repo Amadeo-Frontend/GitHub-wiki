@@ -25,6 +25,9 @@ function App() {
       if (!isExist) {
         setRepos((prev) => [...prev, data]);
         setCurrentRepos('');
+        toast.success('Repositório adicionado com sucesso!', {
+          autoClose: 3000,
+        });
         return;
       }
     }
