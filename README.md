@@ -21,7 +21,7 @@ GitHub Wiki é um projeto desenvolvido com Vite, React JS, styled-components par
 
 - Busca de repositórios no GitHub.
 
-- Exibição de informações dos repositórios encontrados, como nome, descrição, estrelas, entre outros.
+- Exibição de informações dos repositórios encontrados.
 
 - Adição e remoção de repositórios à lista.
 - Exibição de um toast de sucesso quando um repositório é adicionado com êxito ou removido.
