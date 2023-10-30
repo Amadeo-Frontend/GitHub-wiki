@@ -15,7 +15,7 @@
 
 # GitHub Wiki
 
-GitHub Wiki é um projeto desenvolvido com Vite, React JS, styled-components para criar uma aplicação web que permite aos usuários buscar e explorar repositórios no GitHub de forma fácil e interativa.
+GitHub Wiki é um projeto desenvolvido com Vite, React JS, styled-componentse e axios para criar uma aplicação web que permite aos usuários buscar e explorar repositórios no GitHub de forma fácil e interativa.
 
 ## Recursos Principais
 
