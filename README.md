@@ -19,11 +19,13 @@ GitHub Wiki é um projeto desenvolvido com Vite, React JS, styled-components par
 
 ## Recursos Principais
 
-- **Pesquisa Rápida:** Encontre repositórios no GitHub através de uma barra de pesquisa intuitiva.
+- Busca de repositórios no GitHub.
 
-- **Detalhes do Repositório:** Veja informações detalhadas sobre cada repositório, incluindo descrição, linguagem, data de criação e muito mais.
+- Exibição de informações dos repositórios encontrados, como nome, descrição, estrelas, entre outros.
 
-- **Lista de Repositórios:** Visualize uma lista de repositórios correspondentes à sua pesquisa.
+- Adição e remoção de repositórios à lista.
+- Exibição de um toast de sucesso quando um repositório é adicionado com êxito ou removido.
+- Interface de usuário simples e amigável.
 
 ## Tecnologias Utilizadas
 
@@ -33,9 +35,17 @@ GitHub Wiki é um projeto desenvolvido com Vite, React JS, styled-components par
 
 - **Styled-components:** O estilo da aplicação é criado com styled-components para uma experiência visual atraente.
 
-- **API do GitHub:** A API do GitHub é usada para buscar informações de repositórios e usuários em tempo real.
+- **Axios:** A API do GitHub é usada para buscar informações de repositórios e usuários em tempo real.
 
 ## Como Usar
+
+1. Digite o nome do repositório que deseja buscar no campo de busca.
+2. Clique no botão de busca para encontrar o repositório.
+3. Os detalhes do repositório serão exibidos na lista.
+4. Você pode adicionar ou remover repositórios da lista.
+5. Um toast de sucesso será exibido quando um repositório é adicionado com sucesso.
+
+## Instalação
 
 1. Clone este repositório.
 2. Instale as dependências usando `npm install`.
@@ -44,6 +54,10 @@ GitHub Wiki é um projeto desenvolvido com Vite, React JS, styled-components par
 
 Apreciamos o seu interesse em GitHub Wiki e esperamos que esta aplicação torne sua experiência de busca de repositórios no GitHub mais eficiente e agradável. Se tiver alguma sugestão ou feedback, por favor, compartilhe comigo!
 
+## Live
+
+<https://git-hub-wiki.vercel.app/>
+
 #
 
-![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/gitfind.png)
+![Image Generation App](https://github.com/Amadeo-Frontend/images_sites/blob/main/gitWiki.png)
