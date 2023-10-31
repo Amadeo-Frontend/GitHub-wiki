@@ -9,11 +9,12 @@ export const InputContainer = styled.div`
 
   input {
     background: transparent;
-    border: none;
+    border: transparent;
     padding: 10px 20px;
     width: 100%;
     height: 62px;
     font-size: 20px;
     color: #f0f3f6;
+    outline: none;
   }
 `;
