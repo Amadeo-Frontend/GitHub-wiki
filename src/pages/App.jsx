@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import Button from '../components/Button';
 import Input from '../components/Input';
@@ -19,19 +19,28 @@ function App() {
   };
 
   const handleSearchRepo = async () => {
-    const { data } = await api.get(`repos/${currentRepos}`);
-    if (data.id) {
-      const isExist = repos.find((repo) => repo.id === data.id);
-      if (!isExist) {
-        setRepos((prev) => [...prev, data]);
-        setCurrentRepos('');
-        toast.success('Repositório adicionado com sucesso!', {
-          autoClose: 3000,
-        });
-        return;
+    try {
+      const { data } = await api.get(`repos/${currentRepos}`);
+
+      if (data.id) {
+        const isExist = repos.find((repo) => repo.id === data.id);
+        if (!isExist) {
+          setRepos((prev) => [...prev, data]);
+          setCurrentRepos('');
+          toast.success('Repositório adicionado com sucesso!', {
+            autoClose: 3000,
+          });
+          return;
+        }
       }
+
+      alert('Nenhum repositório encontrado!');
+    } catch (error) {
+      console.error('Erro ao buscar repositório:', error.message);
+      alert(
+        'Erro ao buscar repositório. Verifique o console para mais detalhes.',
+      );
     }
-    alert('Nenhum repositório encontrado!');
   };
 
   return (

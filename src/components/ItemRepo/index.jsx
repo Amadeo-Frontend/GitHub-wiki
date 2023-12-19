@@ -1,4 +1,6 @@
-import { CiTrash } from 'react-icons/ci';
+import PropTypes from 'prop-types'; // Certifique-se de importar PropTypes
+
+import { FaTrash } from 'react-icons/fa';
 import { ItemContainer } from './styles';
 
 function ItemRepo({ repo, onRemoveRepo }) {
@@ -15,12 +17,23 @@ function ItemRepo({ repo, onRemoveRepo }) {
       </a>
       <br />
       <a href="#" className="remover" onClick={handleRemoveClick}>
-        <CiTrash />
+        <FaTrash />
         Remover
       </a>
       <hr />
     </ItemContainer>
   );
 }
+
+// Defina as propTypes para o componente
+ItemRepo.propTypes = {
+  repo: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    full_name: PropTypes.string.isRequired,
+    html_url: PropTypes.string.isRequired,
+    // Adicione outras propTypes conforme necessário
+  }).isRequired,
+  onRemoveRepo: PropTypes.func.isRequired,
+};
 
 export default ItemRepo;

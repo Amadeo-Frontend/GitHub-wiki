@@ -4,7 +4,7 @@ function Input({ value, onChange }) {
   return (
     <InputContainer>
       <input
-        placeholder="Procure um repositório"
+        placeholder="Digite o usuário/repositório"
         value={value}
         onChange={onChange}
       />
